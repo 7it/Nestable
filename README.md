@@ -68,6 +68,11 @@ You can change the follow options:
 * `maxDepth` number of levels an item can be nested (default `5`)
 * `group` group ID to allow dragging between lists (default `0`)
 
+These options have been added into this codebase, apart from the original Nestable:
+
+* `clone` Whether item gets cloned on drag instead of moved (default `false`)
+* `insertable` Whether item can be inserted when dragging (default `true`)
+
 These advanced config options are also available:
 
 * `listNodeName` The HTML element to create for lists (default `'ol'`)
@@ -82,6 +87,10 @@ These advanced config options are also available:
 * `emptyClass` The class used for empty list placeholder elements (default `'dd-empty'`)
 * `expandBtnHTML` The HTML text used to generate a list item expand button (default `'<button data-action="expand">Expand></button>'`)
 * `collapseBtnHTML` The HTML text used to generate a list item collapse button (default `'<button data-action="collapse">Collapse</button>'`)
+
+These advanced config options have been added into this codebase, apart from the original Nestable:
+
+* `noDragClass` The class applied to list element for which dragging is disabled (default `<div class="dd-handle dd-nodrag">Item 3</div>`)
 
 **Inspect the [Nestable Demo](http://dbushell.github.com/Nestable/) for guidance.**
 

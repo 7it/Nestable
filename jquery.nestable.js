@@ -90,10 +90,13 @@
             var onStartEvent = function(e)
             {
                 var handle = $(e.target);
-                if (!handle.hasClass(list.options.handleClass)) {
-                    if (handle.closest('.' + list.options.noDragClass).length) {
+
+                if (handle.closest('.' + list.options.noDragClass).length) {
                         return;
                     }
+
+                if (!handle.hasClass(list.options.handleClass)) {
+
                     handle = handle.closest('.' + list.options.handleClass);
                 }
 
